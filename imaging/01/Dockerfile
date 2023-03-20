@@ -1,8 +1,4 @@
 #INSTRUCTION arguments
-
-#INSTRUCTION arguments
-FROM      dokken/centos-8
+FROM      centos
 RUN       yum install epel-release -y
 RUN       yum install nginx -y
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
-EXPOSE    80
