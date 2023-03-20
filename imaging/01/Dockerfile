@@ -1,5 +1,8 @@
 #INSTRUCTION arguments
 
-FROM  centos:8
-RUN   yum install epe1-release -y
-RUN   yum install nginx -y
+#INSTRUCTION arguments
+FROM      dokken/centos-8
+RUN       yum install epel-release -y
+RUN       yum install nginx -y
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
+EXPOSE    80
