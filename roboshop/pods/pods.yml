@@ -11,9 +11,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-name: frontend
+  name: frontend
 spec:
-type: NodePort
+  type: NodePort
 #selector:
 #component: frontend
 ports:
