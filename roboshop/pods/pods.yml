@@ -6,3 +6,19 @@ spec:
   containers:
     - name: frontend
       image: rkalluru/frontend
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+name: frontend
+spec:
+type: NodePort
+#selector:
+#component: frontend
+ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+
+
