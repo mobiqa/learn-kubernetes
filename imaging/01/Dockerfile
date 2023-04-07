@@ -3,3 +3,4 @@ FROM      dokken/centos-8
 RUN       yum install epel-release -y
 RUN       yum install nginx -y
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
+#Its like a System CTL command(entry point)
