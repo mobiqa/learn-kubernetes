@@ -7,3 +7,12 @@ spec:
     - name: nginx
       image: nginx
 #status: {
+
+
+#  kubectl apply -f  01-sample.yml
+#   kubectl logs 01-sample -c nginx
+#   kubectl get pods -A
+#   kubectl get svc -A
+#  kubectl delete -f  01-sample.yml
+
+
