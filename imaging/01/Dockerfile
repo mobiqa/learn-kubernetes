@@ -12,7 +12,7 @@ ENTRYPOINT ["nginx", "-g", "daemon off;"]
 # docker build -t buildname .
 # docker run imageid
 # docker inpsect id(container or Image)
-#
-#
-#
+# docker ps -a
+# docker rm -f containerid
+# docker rmi -f $(docker images -aq)
 #
