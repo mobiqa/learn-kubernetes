@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: 03-service
-  labels:
-    name: 03-service
+#  labels:
+#    name: 03-service
 spec:
   containers:
     - name: nginx
@@ -14,8 +14,8 @@ kind: Service
 metadata:
   name: service-03
 spec:
-  selector:
-    name: 03-service
+#  selector:
+#    name: 03-service
   ports:
     - protocol: TCP
       port: 80
