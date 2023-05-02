@@ -14,3 +14,4 @@ CMD [ "google.com" ]
 # if we want to overridden the entry point we can do that aswell like going to shell and make the changes
 # docker run --entrypoint bas -it image id
 # expose is used to add an port to the doker image
+# inpsect is going to show all information about a container
