@@ -30,3 +30,5 @@ metadata:
 data:
   URL: example.com
   ENV: prod.example.com
+
+# kubectl exec -it 04-env env
