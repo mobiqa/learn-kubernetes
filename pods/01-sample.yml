@@ -14,5 +14,8 @@ spec:
 #   kubectl get pods -A
 #   kubectl get svc -A
 #  kubectl delete -f  01-sample.yml
+# docker ps -A (shows containers which are failing)
+# service is a load balancer in Kubernetes
+# we have core dns in kubenernetes like we have dns in Amazon
 
 
