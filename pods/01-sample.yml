@@ -16,6 +16,17 @@ spec:
 #  kubectl delete -f  01-sample.yml
 # docker ps -A (shows containers which are failing)
 # service is a load balancer in Kubernetes
-# we have core dns in kubenernetes like we have dns in Amazon
-
-
+# we have core dns in kubenernetes like we have dns in Amazon when we have two pods we need to manage it so we use
+# service for dns records
+# we will use service to expose the network to the pod
+# To go in to the container we use the command
+# docker exec -it containerID bash( give the conatiner ID )
+# kubectl exec -it debug bash
+# Attaching pod to a service, you have to define Label in POD and in service you defince as Selector
+# To view the service after attaching to pod, you can view by Kubectl describe SVC SVC Name, then view the endpoints
+# create a pod, create a service to that pod , to attach a service to the pod, use label in pod and selector in service
+# if we want to go inside the container, then use docker exec -it containerID bash( give the conatiner ID )
+# -it:interactive command for giving inputs and bash is the language if want to use
+# kubectl exec -it debug bash
+# Hostport belongs to the pod, NodePort belongs to the service, To publish a port we will use "-P" like docker run -d "-P" nginx
+# How to pass environment variables in docker
