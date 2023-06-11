@@ -93,7 +93,7 @@ metadata:
   labels:
     component: catalogue
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     # selector labs for pods, Meaning pods are attached to replica set like svc in replica set using these selectors
     matchLabels:
