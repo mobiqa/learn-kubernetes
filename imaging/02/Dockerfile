@@ -1,5 +1,5 @@
 FROM      dokken/centos-8
-ENTRYPOINT ["ping", "-c", "3"]
+ENTRYPOINT ["ping", "-c", "10"]
 CMD [ "google.com" ]
 
 # CMD is an argument or instruction to ENTRY POINT, it pick up the value mentioned in entry point
